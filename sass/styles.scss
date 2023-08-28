@@ -1,0 +1,115 @@
+:root {
+    --back-1: #445966;
+    --back-2: #627e8f;
+    --back-3: #7393a7;
+    --back-4: #8badc2;
+    --back-5: #9ebfd3;
+    --back-6: #d0e3ee;
+}
+
+.uk-navbar-container {
+    background-color: var(--back-1) !important;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uk-active {
+    a {
+        color: var(--back-6) !important;
+        font-weight: 700;
+        font-size: 16px !important;
+    }
+}
+
+.uk-navbar-dropdown-nav {
+    li {
+        a {
+            color: var(--back-1) !important;
+        }
+    }
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 50px 200px;
+
+    background-color: var(--back-6);
+
+    .tarjeta,
+    .uk-card-default {
+        min-height: 650px !important;
+        max-height: 1000px;
+    }
+
+    div {
+        border-radius: 20px;
+
+        div {
+            img {
+                border-radius: 20px 20px 0 0;
+            }
+
+            button {
+                border-radius: 20px;
+                background-color: var(--back-1);
+                font-weight: 800;
+
+                &:hover {
+                    background-color: var(--back-2);
+                }
+            }
+        }
+    }
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px 200px;
+
+    background-color: var(--back-6);
+
+    height: calc(100vh - 100px);
+
+    div {
+        border-radius: 20px;
+    }
+}
+
+.cardContacto{
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 100px;
+}
+
+.buttonMail {
+    border-radius: 20px;
+    background-color: var(--back-1);
+    color: var(--back-6);
+    font-weight: 800;
+    font-size: 17px;
+
+    padding: 5px 40px 8px 40px;
+
+    &:hover {
+        list-style: none;
+        background-color: var(--back-2);
+        color: aliceblue;
+    }
+}
